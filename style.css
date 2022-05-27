@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-section{
+    text-align: center;
+}
+.pricing-title{
+    color: blueviolet;
+}
+.pricing-table-content{
+    margin-top: 15px;
+}
+.pricing-table-content h2{
+    position: relative;
+}
+.pricing-table-content h2::after{
+   content: "";
+   position: absolute;
+   top: 50px;
+    left: 537px;
+    width: 45px;
+   height: 2px;
+   background-color: blueviolet;
+}
+.pricing-para{
+    margin-top: 30px;
+}
+.pricing-item{
+    box-shadow: 4px 4px 25px rgba(0,0,0,.1);
+    padding: 35px 15px;
+    margin-top: 55px;
+    transition: .5s;
+  }
+  .pricing-item:hover{
+    background-color: blue;
+  }
+  .pricing-item:hover.pricing-item h5 {
+    color: white;
+  }
+  .pricing-item:hover .pricing-dollar {
+    color: white;
+  }
+  .pricing-item:hover.pricing-item p {
+    color: white;
+  }
+  .pricing-item:hover .Pricing-btn {
+    background-color: white;
+    color:blueviolet ;
+  }
+  .pricing-item h5{
+      transition: .5s;
+  }
+.pricing-dollar{
+    font-size: 35px;
+    border-bottom: 1px solid aliceblue;
+    width: 145px;
+    margin: auto;
+    height: 90px;
+    transition: .5s;
+}
+.pricing-item p {
+	width: 50%;
+	margin: auto;
+    margin-top: 15px;
+    transition: .5s;
+
+}
+.Pricing-btn {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 25px;
+	background-color: blue;
+	clear: white;
+	color: white;
+	margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+   
+    
+}
+.Pricing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 00%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 25px;
+    transition: .5s;
+    z-index: -1;
+}
+.Pricing-btn:hover:before {
+    width: 100%;
+    
+}
+.Pricing-btn:hover {
+    color: rgb(253, 239, 239) !important;
+    
+    
+}
+/* banner section */
+.banner-section{
+    background: url(https://i.postimg.cc/fTYD52NK/free-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 96, 210,.6);
+    z-index: -1;
+
+}
+.banner-content {
+	width: 60%;
+	margin:auto ;
+    position: relative;
+}
+.banner-content::before {
+    content: "";
+    position: absolute;
+    top: 146px;
+    left: 240px;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+}
+.banner-content p {
+	margin-top: 35px;
+}
+.banner-btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #1975fd;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.banner-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    border-radius: 20px;
+    z-index: -1;
+    transition: .5s;
+}
+.banner-btn:hover::before{
+    width: 100%;
+}
+.banner-btn:hover{
+    color: white;
+    border: 1px solid white;
+}
+/* contact section */
+.contact-section{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+.contact-lelf-form{
+    background-color: blue;
+    padding: 35px;
+}
+.contact-right-para {
+	margin-top: 15px;
+}
+.form-email{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(246, 246, 248);
+    margin-top: 30px;
+    outline: none;
+}
+.form-buttan{
+    border: none;
+    padding: 10px 28px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid wheat;
+    background-color: blue;
+    margin-left: 25px;
+}
+.contact-right-content {
+	box-shadow: 4px 4px 20px rgba(0,0,0,.12);
+    padding: 25px;
+    color: black;
+    border-radius: 5px;
+}
+.contact-btn {
+	border: none;
+	padding: 10px 15px;
+	border-radius: 20px;
+	background-color: blue;
+	color: white;
+	margin-top: 78px;
+    transition: .5s;
+}
+.contact-btn:hover {
+    background-color: rgb(44, 44, 247);
+}
